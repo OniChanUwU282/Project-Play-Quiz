@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Presentación de una aplicación móvil desarrollada con React Native.">
+  <title>Página de PlayQuiz</title>
+  <link rel="icon" type="image/png" href="./assent/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#inicio">
+      <img class="logo-img" src="./assent/icon.png" alt="Logo PlayQuiz"> PlayQuiz</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav id="navMenu">
+      <a href="#inicio">Inicio</a>
+      <a href="#acerca">Acerca de</a>
+      <a href="#funciones">Funciones</a>
+      <a href="#descarga">Descarga</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <span class="eyebrow">APLICACIÓN MÓVIL · REACT NATIVE</span>
+        <h1>Aprende <span>Jugando</span></h1>
+        <p class="hero-text">Conoce <strong>PlayQuiz</strong> una aplicación educativa diseñada para fortalecer el aprendizaje a través de juegos interactivos, guías didácticas y evaluaciones. Disfruta de una experiencia dinámica, sencilla y accesible desde tu teléfono, mientras aprendes de una manera divertida.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#descarga">Obtener APK <span>↓</span></a>
+          <a class="button secondary" href="#acerca">Conocer la app</a>
+        </div>
+        <div class="mini-info"><span class="dot"></span> Desarrollada con React Native</div>
+      </div>
+      <div class="phone-wrap" aria-label="Vista ilustrativa de un teléfono">
+        <div class="phone">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+          <img
+            src="./assent/captura-playquiz.jpeg"
+            alt="Captura de pantalla de PlayQuiz"
+            class="phone-screenshot"
+            >
+        </div>
+        </div>
+        <div class="floating-tag">Fácil de usar</div>
+      </div>
+    </section>
+
+    <section class="about section" id="acerca">
+      <div class="section-label">01 — PRESENTACIÓN</div>
+      <div class="about-grid">
+        <h2>¿En qué consiste <span>PlayQuiz?</span></h2>
+        <div><p> <strong>PlayQuiz</strong>es una aplicación educativa que integra juegos interactivos, guías y evaluaciones para fortalecer el aprendizaje de manera dinámica y divertida.</p>
+        <p> Su finalidad es complementar la enseñanza en el aula, motivar la participación de los estudiantes y contribuir al desarrollo de sus conocimientos matemáticos durante la gestión 2026.</p></div>
+      </div>
+    </section>
+
+    <section class="features section" id="funciones">
+      <div class="section-label">02 — CARACTERÍSTICAS</div>
+      <h2>Características del<br><span>Producto.</span></h2>
+      <div class="feature-grid">
+        <article class="feature-card"><h3>Marca, Nombre y Eslogan</h3><p>Registrada bajo el nombre PLAYQUIZ ("¡Aprende Jugando Matemáticas!"), utilizando un diseño tipográfico llamativo animado con rotación y escala dinámicas. </p></article>
+        <article class="feature-card"><h3>Modos de Juego Versátiles:</h3><p> <strong>Modo Solitario:</strong> Permite la práctica individual del estudiante a su propio ritmo.</p> <br>
+        <p> <strong>Modo Entre Compañeros (Co-op / Multijugador en un mismo dispositivo):</strong> Permite la participación de 2 a 4 estudiantes por turnos rotativos, incentivando el aprendizaje colaborativo y la sana competencia.</p></article>
+        
+        <article class="feature-card">
+        <h3>Adaptabilidad por Nivel Académico</h3>
+        <p>
+        La aplicación genera <strong>preguntas adaptadas al nivel académico</strong>, desde 1ro hasta 6to de secundaria.
+        <strong>1ro y 2do:</strong> sumas y multiplicaciones avanzadas.
+        <strong>3ro y 4to:</strong> números enteros y signos negativos.
+        <strong>Cursos superiores:</strong> ecuaciones algebraicas de primer grado.
+        </p>
+        </article>
+
+        <article class="feature-card">
+        <h3>Personalización Visual</h3>
+        <p>
+        Incluye <strong>4 temas visuales intercambiables</strong>: Slate Dark, Crimson Red, Forest Green y Nordic Light.
+        Cada tema modifica dinámicamente los <strong>colores de fondos, tarjetas, textos y botones</strong>, ofreciendo una experiencia visual personalizada.
+        </p>
+        </article>
+
+        <article class="feature-card">
+        <h3>Gestión del Tiempo y Desafío</h3>
+        <p>
+        Cuenta con un <strong>temporizador configurable</strong> de 10 segundos por defecto y una <strong>barra de progreso visual</strong> que cambia de verde a rojo según el tiempo restante, aumentando el desafío de cada pregunta.
+        </p>
+        </article>
+
+        <article class="feature-card">
+        <h3>Retroalimentación Inmediata</h3>
+        <p>
+        Presenta <strong>notificaciones automáticas</strong> que indican si la respuesta seleccionada es correcta o incorrecta, permitiendo al estudiante <strong>reconocer sus aciertos y errores</strong> durante el juego.
+        </p>
+        </article>
+
+        <article class="feature-card">
+        <h3>Cuadro de Honor y Evaluación</h3>
+        <p>
+        Al finalizar <strong>5 rondas de juego</strong>, la aplicación procesa los puntajes acumulados y reconoce automáticamente al <strong>jugador más destacado (MVP)</strong>, fomentando la competencia y la motivación.
+        </p>  
+        </article>
+
+      </div>
+    </section>
+
+    <section class="download section" id="descarga">
+      <div class="download-box">
+        <div class="download-text">
+          <div class="section-label">03 — DESCARGA</div>
+          <h2>¿Listo para probarla?</h2>
+          <p>Descarga el archivo APK e instala PlayQuiz en tu dispositivo Android.</p>
+          <a class="button download-button" href="https://expo.dev/artifacts/eas/gNDKleqFvDcnqtPzvRuzwPB-XuIeG-nEj9T0d1edbTA.apk" download>Descargar APK <span>↓</span></a>
+        </div>
+        <div class="download-art">
+          <img src="./assent/icon.png" alt="Logo de PlayQuiz">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+<footer>
+    <a class="logo" href="#inicio">
+        <img class="logo-img" src="./assent/icon.png" alt="Logo Play Quiz"> PlayQuiz™
+    </a>
+
+    <p>© <span id="year"></span> PlayQuiz. Todos los derechos reservados.</p>
+
+    <p>Desarrollado por <strong>Onichan's Group Corporation</strong> · Proyecto creado con React Native.</p>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
